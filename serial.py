@@ -23,6 +23,9 @@ class SerialGenerator:
         self.start = start
         self.next = self.start
 
+    def __repr__(self):
+        return f'<Serial Generator start= {self.start} next= {self.next}>'
+
     def generate(self):
         """ Increments current value by 1 and returns current value """
         self.next += 1
